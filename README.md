@@ -2,7 +2,7 @@
 
 Projects that I have completed while going through the FreeCodeCamp Curriculum. [Donate to freeCodeCamp].
 
-- Build A Tribute Page - [View On Github](https://arcismd.github.io/responsive-web-design-projects/tribute-page/index.html) / [View On CodePen](https://codepen.io/arcismd/full/MWOjJEq).
+- Build A Tribute Page - [View On Github](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/tribute-page/) / [View On CodePen](https://codepen.io/arcismd/full/MWOjJEq).
 -
 -
 -
