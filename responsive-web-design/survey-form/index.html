@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Survey Form Page</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <h2>We need to know a little more about you in order to give you the best offers!</h2>
+    </header>
+    <main>
+        <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Full name</label>
+            <input type="text" name="name" id="name" placeholder="Johnny Depp" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="heheboy@mail.com" required>
+        </div>
+        <div>
+        <label id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="1" max="120" placeholder="18">
+        </div>
+        <p id="description">Choose what programming language you want to learn</p>
+            <select id="dropdown" name="experience">
+                <option disabled selected value>Select programming language</option>
+                <option value="C">C</option>
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">Javascript</option>
+                <option value="Objective-C">Objective-C</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        <div>
+            <p id="description">Have you previously studied any programming language?</p>
+        <label>
+            <input name="yepnope" value="yes" type="radio" id="r-input">Yes
+        </label>
+        <label>
+            <input name="yepnope" value="No" type="radio" id="r-input">No
+        </label>
+        </div>
+        <div>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <label>
+            <input name="tech-exp" value="CheckBox 1" type="checkbox" class="c-input">CheckBox 1
+        </label>
+        <label>
+            <input name="tech-exp" value="CheckBox 2" type="checkbox" class="c-input">CheckBox 2
+        </label>
+        <label>
+            <input name="tech-exp" value="CheckBox 2" type="checkbox" class="c-input">CheckBox 3
+        </label>
+        <label>
+            <input name="tech-exp" value="CheckBox 4" type="checkbox" class="c-input">CheckBox 4
+        </label>
+        </div>
+        <div>
+        <p id="description">Any comments or suggestions?</p>
+            <textarea id="text-comment" placeholder="I have some additional comments"></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        </form>
+    </main>
+</br>
+</body>
+</html>
