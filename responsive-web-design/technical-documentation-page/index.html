@@ -8,53 +8,151 @@
     <title>Documentation Page</title>
 </head>
 <body>
-    <nad id="navbar">
+    <nav id="navbar">
         <header>
-            HTML Multimedia
+            JS Web APIs
         </header>
-        <a class="nav-link" href="#">Document</a>
-    </nad>
+        <a class="nav-link" href="#Web_API_Intro">Web API Intro</a>
+        <a class="nav-link" href="#JavaScript_Validation_API">JavaScript Validation API</a>
+        <a class="nav-link" href="#Web_History_API">Web History API</a>
+        <a class="nav-link" href="#Web_Storage_API">Web Storage API</a>
+        <a class="nav-link" href="#Web_Workers_API">Web Workers API</a>
+    </nav>
     <main id="main-doc">
-        <section id="main-section" id="">
+        <section class="main-section" id="Web_API_Intro">
             <header>
-
+                Web API Intro
             </header>
             <article>
+                <h2>Web APIs - Introduction</h2>
+                A Web API is a developer's dream.
+                <ul>
+                <li>It can extend the functionality of the browser</li>
+                <li>It can greatly simplify complex functions</li>
+                <li>It can provide easy syntax to complex code</li>
+                </ul>
+                <hr><br>
+                <h2>What is Web API?</h2>
+                <p>API stands for Application Programming Interface.</p>
+                <p>A Web API is an application programming interface for the Web.</p>
+                <p>A Browser API can extend the functionality of a web browser.</p>
+                <p>A Server API can extend the functionality of a web server.</p>
+                <hr><br>
+                <h2>Browser APIs</h2>
+                <p>All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.</p>
+                <p>For example, the Geolocation API can return the coordinates of where the browser is located.</p>                   
+                <p>Get the latitude and longitude of the user's position:</p>
+                <code>const myElement = document.getElementById("demo");
 
+                    function getLocation() {
+                      if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                      } else {
+                        myElement.innerHTML = "Geolocation is not supported by this browser.";
+                      }
+                    }
+                    
+                    function showPosition(position) {
+                      myElement.innerHTML = "Latitude: " + position.coords.latitude +
+                      "<br>Longitude: " + position.coords.longitude;
+                    }</code>
+                <h2>Third Party APIs</h2>
+                <p>Third party APIs are not built into your browser.</p>
+                <p>To use these APIs, you will have to download the code from the Web.</p>
             </article>
         </section>
-        <section id="main-section" id="">
+        <section class="main-section" id="JavaScript_Validation_API">
             <header>
-
+                JavaScript Validation API
             </header>      
             <article>
-                
-            </article>     
+                <h3>Constraint Validation DOM Methods</h3>
+                <p><strong>checkValidity()</strong>	- Returns true if an input element contains valid data.</p>
+                <p><strong>setCustomValidity()</strong>	- Sets the validationMessage property of an input element.</p>             
+            </article>   
         </section>
-        <section id="main-section" id="">
+        <section class="main-section" id="Web_History_API">
             <header>
-
+                Web History API
             </header>   
             <article>
-                
+                <p>The Web History API provides easy methods to access the windows.history object.</p>      
+                <p>The window.history object contains the URLs (Web Sites) visited by the user.</p> 
+                <h3>The History back() Method</h3>    
+                <p>The back() method loads the previous URL in the windows.history list.</p>  
+                <p>It is the same as clicking the "back arrow" in your browser.</p>  
+                <code>function myFunction() {
+                      window.history.back();
+                    }</code>  
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>           
             </article>        
         </section>
-        <section id="main-section" id="">
+        <section class="main-section" id="Web_Storage_API">
             <header>
-
+                Web Storage API
             </header>   
             <article>
-                
+                <p>The Web Storage API is a simple syntax for storing and retrieving data in the browser. It is very easy to use:</p>
+                <code>localStorage.setItem("name", "John Doe");
+                    localStorage.getItem("name");</code>   
+                    <h2>The localStorage Object</h2>
+                    <hr><br>
+                    <p>The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.</p>
+                    <p>The data is stored with no expiration date, and will not be deleted when the browser is closed.</p> 
+                    <p>The data will be available for days, weeks, and years.</p> 
+                    <hr><br>
+                    <h2>The setItem() Method</h2>    
+                    <p>The localStorage.setItem() method stores a data item in a storage.</p>
+                    <p>t takes a name and a value as parameters:</p>
+                    <code>localStorage.setItem("name", "John Doe");</code>
+                    <br>
+                    <h2>The getItem() Method</h2>
+                    <p>The localStorage.getItem() method retrieves a data item from the storage.</p>
+                    <p>It takes a name as parameter:</p> 
+                    <code>localStorage.getItem("name");</code>    
             </article>
         </section>
-        <section id="main-section" id="">
+        <section class="main-section" id="Web_Workers_API">
             <header>
-
+                Web Workers API
             </header> 
             <article>
-                
+                <p>A web worker is a JavaScript running in the background, without affecting the performance of the page.</p>
+                <h2>What is a Web Worker?</h2>
+                <p>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.</p>
+                <p>A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
+                <hr><br>
+                <h2>Check Web Worker Support</h2>
+                <p>Before creating a web worker, check whether the user's browser supports it:</p>
+                <code>if (typeof(Worker) !== "undefined") {
+                    // Yes! Web worker support!
+                    // Some code.....
+                  } else {
+                    // Sorry! No Web Worker support..
+                  }</code>
+                <br>
+                <h2>Create a Web Worker File</h2>
+                <p>Now, let's create our web worker in an external JavaScript.</p> 
+                <p>Here, we create a script that counts. The script is stored in the "demo_workers.js" file:</p>
+                <code>let i = 0;
+
+                    function timedCount() {
+                      i ++;
+                      postMessage(i);
+                      setTimeout("timedCount()",500);
+                    }
+                    
+                    timedCount();</code>             
             </article>
         </section>
+        <section>
+            <hr><br>
+            <h4>To view the entire documentation, access the <a href="https://www.w3schools.com/js/js_api_intro.asp">w3schools page</a>!</h4>
+        </section>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
