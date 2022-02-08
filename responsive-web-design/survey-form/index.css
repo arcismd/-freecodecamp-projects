@@ -17,10 +17,6 @@ body {
     border-radius: 5px;
 }
 
-div {
-    margin: 0 auto 10px auto;
-}
-
 #survey-form {
     background-color: #e4c9ad;
     padding: 20px;
@@ -59,8 +55,8 @@ label {
     background-color: #fff;  
     width: 80%;
     min-height: 25px;
-    padding: 10px;
-    margin: 10px 0 0 0;
+    padding: 10px 0 10px 10px;
+    margin: 10px 0 10px 0;
     color: #495057;
     border: 1px solid #DDC3A5;
     border-radius: 5px;
