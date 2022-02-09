@@ -10,4 +10,4 @@ My projects based on the FreeCodeCamp [curriculum](https://www.freecodecamp.org/
 - Build a Technical Documentation Page - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/technical-documentation-page/) / [View on CodePen](https://codepen.io/arcismd/full/VwrPMwW).
 - Build a Technical Documentation Page - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/personal-portfolio-webpage/) / [View on CodePen](https://codepen.io/arcismd/full/KKymPbO).
 
-Verify [CERTIFICATION](https://www.freecodecamp.org/certification/fcc445c7316-c6ff-4159-8818-4b5cfa8c69f6/responsive-web-design)
+Verify [CERTIFICATION](https://www.freecodecamp.org/certification/fcc445c7316-c6ff-4159-8818-4b5cfa8c69f6/responsive-web-design).
