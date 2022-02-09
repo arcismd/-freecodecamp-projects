@@ -1,6 +1,6 @@
 # FreeCodeCamp Projects
 
-My finished projects based on the FreeCodeCamp curriculum.
+My projects based on the FreeCodeCamp curriculum.
 
 ## Responsive Web Design
 
