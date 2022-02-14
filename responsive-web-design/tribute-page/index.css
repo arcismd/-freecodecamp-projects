@@ -10,8 +10,9 @@ body {
 }
 
 @media screen and (max-width: 319px) {
+
   html,
-body {
+  body {
     overflow-x: scroll;
   }
 }
@@ -25,6 +26,17 @@ h1 {
 h2 {
   font-size: 15px;
 }
+
+a {
+  color: rgb(46, 46, 46);
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
 
 .quill-bg {
   background-image: url(https://cdn-icons-png.flaticon.com/64/16/16294.png);
@@ -160,3 +172,19 @@ img {
   color: white;
 }
 
+/* Footer */
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e8e8e8;
+  height: auto;
+  width: 100%;
+  padding-top: 8px;
+  color: rgb(46, 46, 46);
+  border-top: 1px solid rgb(228, 228, 228);
+}
+
+footer p {
+  margin-bottom: 20px;
+}
