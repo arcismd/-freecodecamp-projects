@@ -61,6 +61,11 @@ ul {
   text-align: left;
 }
 
+#tribute-info-1 {
+  left: 0px;
+  text-align: left;
+}
+
 #tribute-link {
   font-size: 30px;
 }
@@ -226,7 +231,7 @@ img {
   color: white;
 }
 
-#img-caption-2 {
+#img-caption-2, .img-caption-2 {
   margin: 0px auto;
   width: 100%;
   margin-top: 15px;
