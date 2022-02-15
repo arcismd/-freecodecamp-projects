@@ -3,6 +3,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f5f0e1;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
@@ -82,10 +84,18 @@ code {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 815px) {
-  
+h4 a {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+h4 a:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 815px) {
+
 #navbar {
-    position: absolute;
     top: 0;
     padding: 0;
     margin: 0;
@@ -93,16 +103,11 @@ code {
     max-height: 275px;
     z-index: 1;
 }
-  
+      
 #main-doc {
-      position: relative;
-      margin-left: 0px;
-      margin-top: 270px;
-}
-
-.space {
-    padding: 40px 0 0 0;
+    margin-left: 0px;
+    margin-top: 310px;
 }
 }
-
-  
+    
+    
