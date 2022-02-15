@@ -108,12 +108,18 @@ main {
 blockquote {
   color: gray;
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.2em;
   line-height: 1.5;
   border-left: solid 0.5rem;
   border-radius: 2px;
   padding-left: 2rem;
   border-color: rgb(233 233 233);
+}
+
+@media screen and (min-width: 539px) {
+  blockquote {
+    font-size: 2em;
+  }
 }
 
 .page-bar {
