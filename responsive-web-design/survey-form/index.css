@@ -18,11 +18,11 @@ main {
     }
 }
 
-#title, h2 {
+#title, h2 { 
     text-align: center;
 }
 
-#description, #number-label, #name-label, #email-label {
+.description, #number-label, #name-label, #email-label {
     background-color: #DDC3A5;
     padding: 10px;
     border-radius: 5px;
