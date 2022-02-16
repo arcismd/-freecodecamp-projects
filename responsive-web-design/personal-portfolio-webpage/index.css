@@ -53,6 +53,11 @@ nav {
     margin: 0 200px 0 200px;
     padding: 30px;
 }
+@media screen and (max-width: 1075px) {
+    .project-tile {   
+        margin: 0 auto;
+    }
+}
 
 .project {
     background-color: #d4d5c4;
@@ -67,7 +72,12 @@ nav {
 
 .project a:hover {
     text-decoration: underline;
-}
+} 
+
+img {
+    max-width: 100%;
+    margin: 0;
+  }
 
 #topInfo {
     height: 100%;

@@ -61,6 +61,11 @@ ul {
   text-align: left;
 }
 
+#tribute-info-1 {
+  left: 0px;
+  text-align: left;
+}
+
 #tribute-link {
   font-size: 30px;
 }
@@ -103,12 +108,18 @@ main {
 blockquote {
   color: gray;
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.2em;
   line-height: 1.5;
   border-left: solid 0.5rem;
   border-radius: 2px;
   padding-left: 2rem;
   border-color: rgb(233 233 233);
+}
+
+@media screen and (min-width: 539px) {
+  blockquote {
+    font-size: 2em;
+  }
 }
 
 .page-bar {
@@ -226,7 +237,7 @@ img {
   color: white;
 }
 
-#img-caption-2 {
+#img-caption-2, .img-caption-2 {
   margin: 0px auto;
   width: 100%;
   margin-top: 15px;
