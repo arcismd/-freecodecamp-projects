@@ -1,60 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Survey Form Page</title>
 </head>
 <body>
-    <header>
-        <h1 id="title">Survey Form</h1>
-        <h2>We need to know a little more about you in order to give you the best offers!</h2>
-    </header>
-    <main>
-        <form id="survey-form">
-            <label for="name" id="name-label">Full name</label>
-            <input type="text" name="name" id="name" placeholder="Johnny Depp" required>
-            <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="heheboy@mail.com" required>
-        <label id="number-label">Age</label>
-            <input type="number" name="age" id="number" min="1" max="120" placeholder="18">
-        <p class="description">Choose what programming language you want to learn</p>
-            <select id="dropdown" name="experience">
-                <option disabled selected value>Select programming language</option>
-                <option value="C">C</option>
-                <option value="Java">Java</option>
-                <option value="PHP">PHP</option>
-                <option value="Python">Python</option>
-                <option value="JavaScript">Javascript</option>
-                <option value="Objective-C">Objective-C</option>
-                <option value="Ruby">Ruby</option>
-            </select>
-            <p class="description">Have you previously studied any programming language?</p>
-        <label>
-            <input name="yepnope" value="yes" type="radio">Yes
-        </label>
-        <label>
-            <input name="yepnope" value="No" type="radio">No
-        </label>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <label>
-            <input name="tech-exp" value="CheckBox 1" type="checkbox" class="c-input">CheckBox 1
-        </label>
-        <label>
-            <input name="tech-exp" value="CheckBox 2" type="checkbox" class="c-input">CheckBox 2
-        </label>
-        <label>
-            <input name="tech-exp" value="CheckBox 2" type="checkbox" class="c-input">CheckBox 3
-        </label>
-        <label>
-            <input name="tech-exp" value="CheckBox 4" type="checkbox" class="c-input">CheckBox 4
-        </label>
-        <p class="description">Any comments or suggestions?</p>
-            <textarea id="text-comment" placeholder="Additional comments"></textarea>
-            <button type="submit" id="submit">Submit</button>
-        </form>
-    </main>
+    <div class="container">
+        <div class="row">
+            <div id="form-header" class="col-12">
+                <h1 id="title">Survey Form</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="form-tagline" class="col-md-4">
+                <div class="form-tagline">
+                    <i class="fa fa-envelope fa-5x"></i>
+                    <h2>How Are We Doing?</h2>
+                    <p id="description" class="lead">We really value your opinion</p>
+                </div>
+            </div>
+            <div id="form-content" class="col-md-8">
+                <form id="survey-form" onsubmit="return false;">
+                    <div class="row form-group">
+                        <div class="col-sm-3">
+                            <label id="name-label" class="control-label" for="name">Name:</label>
+                        </div>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-name" style="background: #f8f4e3;"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input id="name" type="text" class="form-control" placeholder="Johnny Depp"
+                                name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label id="email-label" class="control-label" for="email">Email:</label>
+                        </div>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-mail" style="background: #f8f4e3;"><i
+                                        class="fa fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" id="email" placeholder="heheboy@mail.com"
+                                name="email" pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label id="number-label" class="control-label" for="email">Room Number:</label>
+                        </div>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-room" style="background: #f8f4e3;"><i
+                                        class="fa fa-door-open"></i></span>
+                            </div>
+                            <input type="number" class="form-control" id="number" placeholder="23"
+                                name="number" min="1" max="125" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label class="control-label" for="visit-purpose">Type of Trip:</label>
+                        </div>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-purpose" style="background: #f8f4e3;"><i
+                                        class="fa fa-hotel"></i></span>
+                            </div>
+                            <select class="form-control" id="dropdown">
+                                <option>Business</option>
+                                <option>Couple</option>
+                                <option>Family</option>
+                                <option>Friends</option>
+                                <option>Solo</option>
+                                <option>Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label class="control-label" for="visit-purpose">Rate Your Stay:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="star-rating" id="five-star"
+                                    value="five-star">
+                                <label class="form-check-label" for="five-star">Excellent</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="star-rating" id="four-star"
+                                    value="four-star">
+                                <label class="form-check-label" for="four-star">Very Good</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="three-star" name="star-rating"
+                                    value="three-star">
+                                <label class="form-check-label" for="three-star">Average</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="two-star" name="star-rating"
+                                    value="two-star">
+                                <label class="form-check-label" for="two-star">Poor</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="one-star" name="star-rating"
+                                    value="one-star">
+                                <label class="form-check-label" for="one-star">Terrible</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label class="control-label" for="visit-purpose">Things You Liked:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="service" value="service">
+                                <label class="form-check-label" for="service">Service</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="value" value="value">
+                                <label class="form-check-label" for="value">Value</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="sleep-quality"
+                                    value="sleep-quality">
+                                <label class="form-check-label" for="sleep-quality">Sleep Quality</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="cleanliness" value="cleanliness">
+                                <label class="form-check-label" for="cleanliness">Cleanliness</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="facilities" value="facilities">
+                                <label class="form-check-label" for="facilities">Facilities</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label class="control-label" for="comment">Comments:</label>
+                        </div>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-mail" style="background: #f8f4e3;"><i
+                                        class="fa fa-comment"></i></span>
+                            </div>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 submit-button">
+                            <button type="submit" id="submit" class="btn btn-default" aria-pressed="true">Submit
+                                Form</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <script src="index.js"></script>
+        <!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'> -->
+        </script>
+    </footer>
 </body>
 </html>
