@@ -92,3 +92,58 @@ html, body {
 	height: auto;
 }
 
+#video {
+	width: 100%;
+}
+
+#video-section > .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+		
+#video-section > .embed-container iframe,
+#video-section > .embed-container object,
+#video-section > .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#email-section {
+	background-color: #c87642;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+#email-section > .email-sentence {
+	color: #541e11;
+	font-weight: 600;
+}
+
+.btn-email {
+	font-weight: 600 !important;
+	background: #feb856;
+	border: none;
+	color: #5a2313;
+    padding: 7px 0;
+    border-radius: 6px;
+}
+
+.btn-email:hover {
+	background: #5a2313;
+	color: #feb856;
+}
+
+@media screen and (max-width: 1000px) {
+	#email-section {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
