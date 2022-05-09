@@ -147,3 +147,69 @@ html, body {
 	}
 }
 
+#pricing .pricing-title {
+	font-size: 4em;
+	font-weight: 600;
+	color: #541e11;
+}
+
+#pricing .pricing-subtitle {
+	color: #541e11
+}
+
+#pricing .pricing-table-title {
+	text-align: center;
+}
+
+#pricing .border-brown {
+	border: 2px #541e11 solid;
+}
+
+#pricing .pricing-bg-regular {
+	background: #fed4a2;
+}
+
+#pricing .pricing-bg-plus {
+	background: #feb856;
+}
+
+#pricing .pricing-bg-pro {
+	background: #c87642;
+}
+
+.text-brown {
+	color: #541e11;
+}
+
+#pricing .pricing-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+#pricing .pricing-wrapper h1 {
+	font-size: 3.5em;
+}
+
+#pricing .pricing-wrapper p {
+	align-self: flex-end;
+}
+
+#pricing .btn-pricing {
+	background-color: #541e11;
+	color: #fff;
+	font-size: 1.6em;
+}
+
+#footer {
+	background: #541e11;
+}
+
+.btn-contact {
+	background-color: #fed4a2;
+	font-weight: 600;
+}
+
+#footer .footer-sections {
+	font-weight: 500;
+	color: #fff;
+}
