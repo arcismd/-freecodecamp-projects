@@ -24,6 +24,10 @@ html, body {
     font-weight: 600;
 }
 
+.nav-item:hover {
+	border-right: 2px solid #2d0a08;
+}
+
 .active > .nav-link {
 	color: #903425 !important;
 }
@@ -83,13 +87,6 @@ html, body {
 
 .process-step .icon img {
 	height: 130px;
-}
-
-
-.process-step:nth-child(3) .icon img {
-	margin-top: 60px;
-	width: 80px;
-	height: auto;
 }
 
 #video {
