@@ -62,3 +62,33 @@ html, body {
 	color: #fff;
 	border-color: #834224;
 }
+
+.how-setence {
+	font-weight: 600;
+	text-align: center;
+	color: #2d0a08;
+}
+
+.process-step h4 {
+	font-weight: 600;
+	color: #81130a;
+}
+
+.process-step .icon {
+	background: #feb856;
+	height: 300px;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.process-step .icon img {
+	height: 130px;
+}
+
+
+.process-step:nth-child(3) .icon img {
+	margin-top: 60px;
+	width: 80px;
+	height: auto;
+}
+
