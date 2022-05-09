@@ -4,10 +4,10 @@ My projects based on the FreeCodeCamp [curriculum](https://www.freecodecamp.org/
 
 ## Responsive Web Design
 
-- Build a Tribute Page (Mobile-First Responsive Design) - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/tribute-page/) / [View on CodePen](https://codepen.io/arcismd/full/MWOjJEq).
-- Build a Survey Form - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/survey-form/) / [View on CodePen](https://codepen.io/arcismd/full/YzEGROq).
-- Build a Product Landing Page - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/product-landing-page/) / [View on CodePen](https://codepen.io/arcismd/full/KKyNBRy).
-- Build a Technical Documentation Page - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/technical-documentation-page/) / [View on CodePen](https://codepen.io/arcismd/full/VwrPMwW).
-- Build a Personal Portfolio Webpage - [View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/personal-portfolio-webpage/) / [View on CodePen](https://codepen.io/arcismd/full/KKymPbO).
-   ![Alt text](https://raw.githubusercontent.com/arcismd/freecodecamp-projects/responsive-web-design/responsive-web-design/certification/responsive-web-design.png "Responsive Web Design Certification")
-Verify [CERTIFICATION](https://www.freecodecamp.org/certification/fcc445c7316-c6ff-4159-8818-4b5cfa8c69f6/responsive-web-design).
+- Build a Tribute Page - __[View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/tribute-page/)__. _[[requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)]_
+- Build a Survey Form - __[View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/survey-form/)__. _[[requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)]_
+- Build a Product Landing Page - __[View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/product-landing-page/)__. _[[requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)]_
+- Build a Technical Documentation Page - __[View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/technical-documentation-page/)__. _[[requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)]_
+- Build a Personal Portfolio Webpage - __[View on GitHub](https://arcismd.github.io/freecodecamp-projects/responsive-web-design/personal-portfolio-webpage/)__. _[[requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)]_
+
+[![Alt text](https://raw.githubusercontent.com/arcismd/freecodecamp-projects/responsive-web-design/responsive-web-design/certification/responsive-web-design.png "Responsive Web Design Certification")](https://www.freecodecamp.org/certification/artur-sincarenco/responsive-web-design)
