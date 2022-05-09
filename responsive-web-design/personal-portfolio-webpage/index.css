@@ -247,3 +247,70 @@ nav a:hover .code {
     color: #F2797B;
     font-weight: 200;
 }
+
+#contact {
+    margin-top: 3rem;
+    padding: 10rem 5rem;
+    text-align: center;
+    background-color: #011640;
+    color: #fff;
+}
+
+.contact-icon {
+    width: 2rem;
+    padding: 1rem;
+    filter: invert(100%);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.contact-details:hover .contact-icon {
+    filter: invert(83%) sepia(39%) saturate(6798%) hue-rotate(308deg) brightness(92%) contrast(107%);
+}
+
+.contact-details:hover {
+    color: #F2797B;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #011640;
+    color: #fff;
+}
+
+.heart::before {
+    content: '\2665';
+    color: #F2797B;
+    font-size: 1.6rem;
+}
+
+footer .code {
+    color: #F2797B;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #02A1A3;
+}
+
+::selection {
+    color: #fff;
+    background: #02A1A3;
+}
