@@ -162,9 +162,18 @@ blockquote {
   }
 }
 
+.second-sec {
+  margin: 0 auto;
+  max-width: 70vw;
+} 
+
 .block-item-1 {
   text-align: justify;
   text-justify: inter-word;
+  background: #f1f1f1;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 19px;
 }
 
 /* Desktop Screen */
@@ -195,7 +204,7 @@ blockquote {
       rgb(201 200 221) 0%,
       rgb(232 232 232) 0%,
       rgb(46 89 99) 100%);
-  padding: 40px 0 30px 0;
+  padding: 20px 0 30px 0;
   border-radius: 3em;
 }
 
@@ -210,6 +219,17 @@ blockquote {
   #img-div-2 {
     background: transparent;
   }
+
+  .second-sec {
+    min-width: 100vw;
+  } 
+}
+
+@media screen and (max-width: 1100px) {
+.second-sec {
+  margin: 0 auto;
+  min-width: 100%;
+}
 }
 
 #image {
