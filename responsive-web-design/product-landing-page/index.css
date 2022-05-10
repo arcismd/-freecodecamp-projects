@@ -25,7 +25,7 @@ html, body {
 }
 
 .nav-item:hover {
-	border-right: 2px solid #2d0a08;
+	text-decoration: underline 1px solid #2d0a08;
 }
 
 .active > .nav-link {
@@ -195,6 +195,12 @@ html, body {
 	background-color: #541e11;
 	color: #fff;
 	font-size: 1.6em;
+}
+
+.coffee-text-logo {
+	font-size: 30px;
+	color: #FEB856;
+	border-bottom: 2px solid #2d0a08
 }
 
 #footer {
